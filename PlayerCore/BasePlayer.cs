@@ -10,9 +10,7 @@ namespace PlayerCore
     {
         protected int selectedValue;
 
-        protected static List <int> numbersForCheatersOnly = new List <int> ();
-
-        public int[] ArrayNumbers{get; protected set;}
+        public static List <int> numbersForCheatersOnly = new List <int> ();
 
         public virtual void SelectNextNumber()
         {
