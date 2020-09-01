@@ -80,10 +80,10 @@ namespace GameCore
 
             if (numberChampion == 0)
             {
-                numberChampion = Game.Players.Count - 1;
+                numberChampion = Game.Players.Count;
             }
 
-            return numberChampion;
+            return numberChampion - 1;
         }
 
     }
