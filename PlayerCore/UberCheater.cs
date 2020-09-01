@@ -13,28 +13,23 @@ namespace PlayerCore
         {
             bool isUnique = false;
 
-            if (index < size)
+            while (!isUnique)
             {
-                while (!isUnique)
+                foreach (int number in NumbersForCheatersOnly)
                 {
-                    foreach (int number in NumbersForCheatersOnly)
+                    if (CurrentValueForSelect == number)
                     {
-                        if (CurrentValueForSelect == number)
-                        {
-                            CurrentValueForSelect++;
+                        CurrentValueForSelect++;
 
-                            break;
-                        }
+                        break;
                     }
-
-                    isUnique = true;
-
-                    arrayNumbers[index] = CurrentValueForSelect;
-
-                    NumbersForCheatersOnly.Add(arrayNumbers[index]);
-
-                    index++;
                 }
+
+                isUnique = true;
+
+                SelectedValue = CurrentValueForSelect;
+
+                NumbersForCheatersOnly.Add(SelectedValue);
             }
         }
 

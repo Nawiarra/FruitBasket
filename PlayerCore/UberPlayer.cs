@@ -9,16 +9,15 @@ namespace PlayerCore
     class UberPlayer : BasePlayer
     {
         private int CurrentValueForSelect = 40;
+
+        int coeff = 0;
         public override void SelectNextNumber()
         {
-            if (index < size)
-            {
-                arrayNumbers[index] = CurrentValueForSelect + index;
+            SelectedValue = CurrentValueForSelect + coeff;
 
-                NumbersForCheatersOnly.Add(arrayNumbers[index]);
+            NumbersForCheatersOnly.Add(SelectedValue);
 
-                index++;
-            }
+            coeff++;
         }
 
         public override string Victory()

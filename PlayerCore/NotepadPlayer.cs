@@ -8,6 +8,16 @@ namespace PlayerCore
 {
     class NotepadPlayer : BasePlayer
     {
+        protected static int size = 20;
+
+        private int[] arrayNumbers;
+        public int index { get; protected set; }
+
+        NotepadPlayer()
+        {
+            arrayNumbers = new int[size];
+        }
+
         public override void SelectNextNumber()
         {
             bool isUnique = false;
@@ -36,6 +46,7 @@ namespace PlayerCore
                 }
             }
         }
+
         public override string Victory()
         {
             return "Okay, I am writing this in my notepad!";

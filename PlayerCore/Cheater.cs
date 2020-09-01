@@ -14,26 +14,22 @@ namespace PlayerCore
 
             Random rnd = new Random();
 
-            if (index < size)
+            while (!isUnique)
             {
-                while (!isUnique)
+                SelectedValue = rnd.Next(40, 140);
+
+                foreach (int number in NumbersForCheatersOnly)
                 {
-                    arrayNumbers[index] = rnd.Next(40, 140);
-
-                    foreach (int number in NumbersForCheatersOnly)
+                    if (SelectedValue == number)
                     {
-                        if (arrayNumbers[index] == number)
-                        {
-                            break;
-                        }
+                        break;
                     }
-
-                    isUnique = true;
-
-                    NumbersForCheatersOnly.Add(arrayNumbers[index]);
-
-                    index++;
                 }
+
+                isUnique = true;
+
+                NumbersForCheatersOnly.Add(SelectedValue);
+
             }
         }
 
