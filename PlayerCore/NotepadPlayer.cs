@@ -41,13 +41,13 @@ namespace PlayerCore
                             break;
                         }
                     }
-
-                    selectedValue = arrayNumbers[index];
-
-                    numbersForCheatersOnly.Add(arrayNumbers[index]);
-
-                    index++;
                 }
+
+                selectedValue = arrayNumbers[index];
+
+                numbersForCheatersOnly.Add(arrayNumbers[index]);
+
+                index++;
             }
         }
 

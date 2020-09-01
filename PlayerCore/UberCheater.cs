@@ -29,10 +29,11 @@ namespace PlayerCore
                     }
                 }
 
-                selectedValue = currentValueForSelect;
-
-                numbersForCheatersOnly.Add(selectedValue);
             }
+
+            selectedValue = currentValueForSelect;
+
+            numbersForCheatersOnly.Add(selectedValue);
         }
 
         public override string Victory()

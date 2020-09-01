@@ -11,7 +11,7 @@ namespace PlayerCore
         public string Name { get; private set; }
         public BasePlayer PlayerType { get; private set; }
 
-        Player(string name, BasePlayer type)
+        public Player(string name, BasePlayer type)
         {
             Name = name;
             PlayerType = type;
