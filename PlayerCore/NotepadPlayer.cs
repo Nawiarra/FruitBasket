@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayerCore
 {
-    class NotepadPlayer : BasePlayer
+    public class NotepadPlayer : BasePlayer
     {
         protected static int size = 20;
 

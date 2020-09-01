@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayerCore
 {
-    class Cheater : BasePlayer
+    public class Cheater : BasePlayer
     {
         public override void SelectNextNumber()
         {

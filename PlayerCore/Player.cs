@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayerCore
 {
-    class Player
+    public class Player
     {
         public string Name { get; private set; }
         public BasePlayer PlayerType { get; private set; }

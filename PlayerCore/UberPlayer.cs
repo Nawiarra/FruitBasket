@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayerCore
 {
-    class UberPlayer : BasePlayer
+    public class UberPlayer : BasePlayer
     {
         private int currentValueForSelect = 40;
 

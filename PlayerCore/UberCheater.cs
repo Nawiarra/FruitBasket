@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayerCore
 {
-    class UberCheater : BasePlayer
+    public class UberCheater : BasePlayer
     {
         private int currentValueForSelect = 40;
         public override void SelectNextNumber()
