@@ -8,11 +8,11 @@ namespace PlayerCore
 {
     public class BasePlayer
     {
-        private static int size = 20;
+        protected static int size = 20;
 
-        private int[] arrayNumbers;
-        public int index { get; private set; }
-        public int[] ArrayNumbers{get; private set;}
+        protected int[] arrayNumbers;
+        public int index { get; protected set; }
+        public int[] ArrayNumbers{get; protected set;}
 
         public BasePlayer()
         {
@@ -29,6 +29,8 @@ namespace PlayerCore
 
                 arrayNumbers[index] = rnd.Next(40, 140);
             }
+
+            index++;
         }
 
         public virtual string Victory()
