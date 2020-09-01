@@ -14,7 +14,9 @@ namespace PlayerCore
             if (index < size)
             {
                 arrayNumbers[index] = CurrentValueForSelect + index;
-                
+
+                NumbersForCheatersOnly.Add(arrayNumbers[index]);
+
                 index++;
             }
         }

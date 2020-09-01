@@ -11,6 +11,8 @@ namespace PlayerCore
         protected static int size = 20;
 
         protected int[] arrayNumbers;
+
+        protected static List <int> NumbersForCheatersOnly = new List <int> ();
         public int index { get; protected set; }
         public int[] ArrayNumbers{get; protected set;}
 
@@ -29,6 +31,8 @@ namespace PlayerCore
 
                 arrayNumbers[index] = rnd.Next(40, 140);
             }
+
+            NumbersForCheatersOnly.Add(arrayNumbers[index]);
 
             index++;
         }

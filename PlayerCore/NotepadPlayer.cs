@@ -30,6 +30,8 @@ namespace PlayerCore
 
                     isUnique = true;
 
+                    NumbersForCheatersOnly.Add(arrayNumbers[index]);
+
                     index++;
                 }
             }
