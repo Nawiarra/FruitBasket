@@ -79,14 +79,20 @@ namespace GameCore
 
             for (int i = 0; i < BasePlayer.numbersForCheatersOnly.Count; i++)
             {
-                if (difference < Math.Abs(selectedSizeOfFruitBasket - BasePlayer.numbersForCheatersOnly[i]))
+                if (difference > Math.Abs(selectedSizeOfFruitBasket - BasePlayer.numbersForCheatersOnly[i]))
                 {
                     difference = Math.Abs(selectedSizeOfFruitBasket - BasePlayer.numbersForCheatersOnly[i]);
 
-                    numberChampion = i + 1 % Game.Players.Count;
+                    numberChampion = (i + 1) % Game.Players.Count;
                 }
             }
-            return numberChampion - 1;
+
+            if (numberChampion == 0)
+            {
+                numberChampion = Game.Players.Count - 1;
+            }
+
+            return numberChampion;
         }
 
     }
