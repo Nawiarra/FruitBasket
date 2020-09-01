@@ -12,10 +12,6 @@ namespace GameCore
     {
         private int selectedSizeOfFruitBasket;
 
-        private static int minPlayersCount = 2;
-
-        private static int maxPlayersCount = 8;
-
         public static List<Player> Players = new List<Player>();
 
         public Game(int selectedSizeOfFruitBasket)
@@ -24,11 +20,6 @@ namespace GameCore
         }
         public bool StartGame()
         {
-            if ((Players.Count < minPlayersCount) || (Players.Count > maxPlayersCount))
-            {
-                return false;
-            }
-
             int selectedValue;
             int championNumber;
 
