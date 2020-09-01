@@ -45,6 +45,7 @@
     <Compile Include="Cheater.cs" />
     <Compile Include="NotepadPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UberCheater.cs" />
     <Compile Include="UberPlayer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
