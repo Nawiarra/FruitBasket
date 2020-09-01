@@ -8,12 +8,12 @@ namespace PlayerCore
 {
     public class NotepadPlayer : BasePlayer
     {
-        protected static int size = 20;
+        protected static int size = 50;
 
         private int[] arrayNumbers;
         public int index { get; protected set; }
 
-        NotepadPlayer()
+        public NotepadPlayer()
         {
             arrayNumbers = new int[size];
         }
@@ -30,15 +30,17 @@ namespace PlayerCore
                 {
                     arrayNumbers[index] = rnd.Next(40, 140);
 
+                    isUnique = true;
+
                     for (int i = 0; i < index; i++)
                     {
                         if(arrayNumbers[index] == arrayNumbers[i])
                         {
+                            isUnique = false;
+
                             break;
                         }
                     }
-
-                    isUnique = true;
 
                     selectedValue = arrayNumbers[index];
 

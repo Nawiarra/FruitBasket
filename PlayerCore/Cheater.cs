@@ -18,19 +18,21 @@ namespace PlayerCore
             {
                 selectedValue = rnd.Next(40, 140);
 
+                isUnique = true;
+
                 foreach (int number in numbersForCheatersOnly)
                 {
                     if (selectedValue == number)
                     {
+                        isUnique = false;
+
                         break;
                     }
+
                 }
 
-                isUnique = true;
-
-                numbersForCheatersOnly.Add(selectedValue);
-
             }
+            numbersForCheatersOnly.Add(selectedValue);
         }
 
         public override string Victory()

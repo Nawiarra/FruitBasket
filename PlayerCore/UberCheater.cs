@@ -15,17 +15,19 @@ namespace PlayerCore
 
             while (!isUnique)
             {
+                isUnique = true;
+
                 foreach (int number in numbersForCheatersOnly)
                 {
                     if (currentValueForSelect == number)
                     {
                         currentValueForSelect++;
 
+                        isUnique = false;
+
                         break;
                     }
                 }
-
-                isUnique = true;
 
                 selectedValue = currentValueForSelect;
 
