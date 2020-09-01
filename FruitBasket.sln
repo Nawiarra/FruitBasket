@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitBasket", "FruitBasket\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerCore", "PlayerCore\PlayerCore.csproj", "{DD84A3C0-D878-4188-A78E-21664059F9AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCore", "GameCore\GameCore.csproj", "{FB727CE6-9004-428B-9452-0E4330C585A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DD84A3C0-D878-4188-A78E-21664059F9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD84A3C0-D878-4188-A78E-21664059F9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD84A3C0-D878-4188-A78E-21664059F9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB727CE6-9004-428B-9452-0E4330C585A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB727CE6-9004-428B-9452-0E4330C585A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB727CE6-9004-428B-9452-0E4330C585A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB727CE6-9004-428B-9452-0E4330C585A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
