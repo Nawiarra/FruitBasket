@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerCore", "PlayerCore\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCore", "GameCore\GameCore.csproj", "{FB727CE6-9004-428B-9452-0E4330C585A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationLib", "ValidationLib\ValidationLib.csproj", "{7953A8CC-F53F-4F00-B7EE-92269EA9E841}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FB727CE6-9004-428B-9452-0E4330C585A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB727CE6-9004-428B-9452-0E4330C585A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB727CE6-9004-428B-9452-0E4330C585A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

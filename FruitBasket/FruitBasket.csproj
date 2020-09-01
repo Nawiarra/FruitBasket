@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameCore\GameCore.csproj">
+      <Project>{fb727ce6-9004-428b-9452-0e4330c585a9}</Project>
+      <Name>GameCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayerCore\PlayerCore.csproj">
+      <Project>{dd84a3c0-d878-4188-a78e-21664059f9ab}</Project>
+      <Name>PlayerCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationLib\ValidationLib.csproj">
+      <Project>{7953a8cc-f53f-4f00-b7ee-92269ea9e841}</Project>
+      <Name>ValidationLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
