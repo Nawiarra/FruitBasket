@@ -16,11 +16,11 @@ namespace PlayerCore
 
             while (!isUnique)
             {
-                SelectedValue = rnd.Next(40, 140);
+                selectedValue = rnd.Next(40, 140);
 
-                foreach (int number in NumbersForCheatersOnly)
+                foreach (int number in numbersForCheatersOnly)
                 {
-                    if (SelectedValue == number)
+                    if (selectedValue == number)
                     {
                         break;
                     }
@@ -28,7 +28,7 @@ namespace PlayerCore
 
                 isUnique = true;
 
-                NumbersForCheatersOnly.Add(SelectedValue);
+                numbersForCheatersOnly.Add(selectedValue);
 
             }
         }

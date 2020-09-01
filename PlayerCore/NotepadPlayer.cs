@@ -40,9 +40,9 @@ namespace PlayerCore
 
                     isUnique = true;
 
-                    SelectedValue = arrayNumbers[index];
+                    selectedValue = arrayNumbers[index];
 
-                    NumbersForCheatersOnly.Add(arrayNumbers[index]);
+                    numbersForCheatersOnly.Add(arrayNumbers[index]);
 
                     index++;
                 }

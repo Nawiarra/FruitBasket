@@ -8,18 +8,18 @@ namespace PlayerCore
 {
     class UberCheater : BasePlayer
     {
-        private int CurrentValueForSelect = 40;
+        private int currentValueForSelect = 40;
         public override void SelectNextNumber()
         {
             bool isUnique = false;
 
             while (!isUnique)
             {
-                foreach (int number in NumbersForCheatersOnly)
+                foreach (int number in numbersForCheatersOnly)
                 {
-                    if (CurrentValueForSelect == number)
+                    if (currentValueForSelect == number)
                     {
-                        CurrentValueForSelect++;
+                        currentValueForSelect++;
 
                         break;
                     }
@@ -27,9 +27,9 @@ namespace PlayerCore
 
                 isUnique = true;
 
-                SelectedValue = CurrentValueForSelect;
+                selectedValue = currentValueForSelect;
 
-                NumbersForCheatersOnly.Add(SelectedValue);
+                numbersForCheatersOnly.Add(selectedValue);
             }
         }
 

@@ -8,9 +8,9 @@ namespace PlayerCore
 {
     public class BasePlayer
     {
-        protected int SelectedValue;
+        protected int selectedValue;
 
-        protected static List <int> NumbersForCheatersOnly = new List <int> ();
+        protected static List <int> numbersForCheatersOnly = new List <int> ();
 
         public int[] ArrayNumbers{get; protected set;}
 
@@ -18,9 +18,9 @@ namespace PlayerCore
         {
             Random rnd = new Random();
 
-            SelectedValue = rnd.Next(40, 140);
+            selectedValue = rnd.Next(40, 140);
 
-            NumbersForCheatersOnly.Add(SelectedValue);
+            numbersForCheatersOnly.Add(selectedValue);
         }
 
         public virtual string Victory()
@@ -30,7 +30,7 @@ namespace PlayerCore
 
         public string ShowPlayerSelectValue()
         {
-            return $"I choose {SelectedValue} \n";
+            return $"I choose {selectedValue} \n";
         }
     }
 }

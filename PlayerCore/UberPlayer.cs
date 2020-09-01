@@ -8,14 +8,14 @@ namespace PlayerCore
 {
     class UberPlayer : BasePlayer
     {
-        private int CurrentValueForSelect = 40;
+        private int currentValueForSelect = 40;
 
-        int coeff = 0;
+        private int coeff = 0;
         public override void SelectNextNumber()
         {
-            SelectedValue = CurrentValueForSelect + coeff;
+            selectedValue = currentValueForSelect + coeff;
 
-            NumbersForCheatersOnly.Add(SelectedValue);
+            numbersForCheatersOnly.Add(selectedValue);
 
             coeff++;
         }
