@@ -17,13 +17,23 @@ namespace PlayerCore
         public BasePlayer()
         {
             arrayNumbers = new int[size];
+
             index = 0;
         }
 
         public virtual void SelectNextNumber()
         {
-            Random rnd = new Random();
-            arrayNumbers[index] = rnd.Next(40, 140);
+            if (index < size)
+            {
+                Random rnd = new Random();
+
+                arrayNumbers[index] = rnd.Next(40, 140);
+            }
+        }
+
+        public virtual string Victory()
+        {
+            return "Hurray, I am winner!";
         }
 
 
