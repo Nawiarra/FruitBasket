@@ -27,5 +27,10 @@ namespace PlayerCore
         {
             return "Hurray, I am winner!";
         }
+
+        public string ShowPlayerSelectValue()
+        {
+            return $"I choose {SelectedValue} \n";
+        }
     }
 }
