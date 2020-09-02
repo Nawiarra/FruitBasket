@@ -98,8 +98,6 @@ namespace FruitBasket
 
         static void Main(string[] args)
         {
-            bool isStarting;
-
             int weight;
             int playersCount;
             int numberOfPlayersType;
