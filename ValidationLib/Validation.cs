@@ -14,9 +14,11 @@ namespace ValidationLib
             int result;
 
             if (!int.TryParse(line, out result))
+            {
                 return int.MinValue;
-            else
-                return result;
+            }
+
+            return result;
         }
     }
 }
