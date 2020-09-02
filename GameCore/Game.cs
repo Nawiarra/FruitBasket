@@ -42,7 +42,7 @@ namespace GameCore
                     {
                         Victory(player.Name);
 
-                        player.PlayerType.Victory();
+                        Console.WriteLine(player.PlayerType.Victory());
 
                         return true;
                     }
@@ -53,7 +53,7 @@ namespace GameCore
 
             Victory(Players[championNumber].Name);
 
-            Players[championNumber].PlayerType.Victory();
+            Console.WriteLine(Players[championNumber].PlayerType.Victory());
 
             return true;
         }
